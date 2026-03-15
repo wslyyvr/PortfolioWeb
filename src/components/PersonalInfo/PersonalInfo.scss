@@ -1,0 +1,59 @@
+@use "../..//styles/_functions" as *;
+
+.PersonalInfoDisplay {
+    //width: 100%;
+    width: 83%;
+    max-width: pxToRem(1500);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 3.3%;
+    //border: 1px solid red;
+
+    //align-items: center;
+    .head-img {
+        //border: 1px solid red;
+        border-radius: pxToRem(500);
+        width: 500px;
+        height: 500px;
+        //margin-left: 12%;
+        margin-top: pxToRem(70);
+    }
+
+    .summary_resume {
+        max-width: 65%;
+        margin-top: pxToRem(120);
+        //border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 2.6%;
+
+        h2 {
+            padding: 0;
+            margin: 0;
+            //border: 1px solid red;
+            font-family: "Arial", "Helvetica", sans-serif;
+            color: black;
+            font-size: pxToRem(66);
+            font-weight: 700;
+        }
+
+        ul {
+
+            padding-left: pxToRem(26);
+
+            .key-point_resume {
+                padding: 0;
+                margin-bottom: pxToRem(20);
+                //border: 1px solid green;
+                font-family: "Inter", sans-serif;
+                color: black;
+                font-size: pxToRem(26);
+                font-weight: 500;
+            }
+        }
+
+
+
+    }
+}

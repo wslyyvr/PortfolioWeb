@@ -1,0 +1,42 @@
+@use "../..//styles/_functions" as *;
+
+.header{
+  width: 100%; 
+  height: pxToRem(430); 
+  background-image: url('../../assets/images/HeaderPic.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:pxToRem(30);
+  h1{
+    padding: 0;
+    margin: 0;
+    //border: 1px solid red;
+    margin-top: pxToRem(120); 
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: white;
+    font-size: pxToRem(88); 
+    font-weight: 700;
+  }
+  P{
+    //border: 1px solid red;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: white;
+    font-size: pxToRem(36); 
+    font-weight: 500;
+  }
+  .resume_download{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

@@ -1,0 +1,228 @@
+@use "../..//styles/_functions" as *;
+
+.popupPart {
+    position: fixed;
+    left: pxToRem(0);
+    top: pxToRem(0);
+    width: 100%;
+    height: 100%;
+    //border: 1px solid red;
+    background: rgba(0, 0, 0, 0.45);
+    inset: 0;
+    z-index: 3;
+
+    .popupBox {
+        background-color: white;
+        margin-top: pxToRem(100);
+        margin-right: auto;
+        margin-left: auto;
+        width: 75%;
+        //   aspect-ratio: 150/ 100;
+        min-height: pxToRem(500);
+        display: flex;
+        flex-direction: column;
+        gap: pxToRem(20);
+
+        .popUpHeader {
+            //border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+
+            .closeIcon {
+                width: pxToRem(26);
+                height: pxToRem(26);
+                margin-right: pxToRem(26);
+                margin-top: pxToRem(26);
+                //border: 1px solid red;
+            }
+        }
+
+        .popupInfo {
+            //border: 1px solid red;
+            width: 100%;
+            //height: 200px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            .img-part {
+                position: relative;
+                overflow: hidden;
+                width: 50%;
+                aspect-ratio: 150/ 100;
+                margin-left: 3%;
+                //border: 1px solid red;
+
+                .carousel-wrapper {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out; // 平滑滑动
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .carousel-image {
+                    width: 100%;
+                    height: 100%;
+                    flex-shrink: 0;
+                    object-fit: fill;
+                    border-radius: pxToRem(8);
+                }
+
+                .carousel-controls {
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    //border: 1px solid red;
+                }
+
+                .carousel-forword_btn {
+                    //background: rgba(0, 0, 0, 0.6);
+                    background-color: transparent;
+                    color: black;
+                    border: none;
+                    width: pxToRem(36);
+                    height: pxToRem(36);
+                    border-radius: 50%;
+                    cursor: pointer;
+                    font-size: pxToRem(16);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .carousel-forword_btn:hover {
+                    background: rgba(0, 0, 0, 0.6);
+                }
+
+                .carousel-forword_btn:active {
+                    transform: scale(0.9);
+                }
+
+                .carousel-backwork_btn {
+                    //background: rgba(0, 0, 0, 0.6);
+                    background-color: transparent;
+                    color: black;
+                    border: none;
+                    width: pxToRem(36);
+                    height: pxToRem(36);
+                    border-radius: 50%;
+                    cursor: pointer;
+                    font-size: pxToRem(16);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .carousel-backwork_btn:hover {
+                    background: rgba(0, 0, 0, 0.6);
+                }
+
+                .carousel-backwork_btn:active {
+                    transform: scale(0.9);
+                }
+            }
+
+            .detail-part {
+                //border: 1px solid red;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                gap: 0px;
+
+                h2 {
+                    //border: 1px solid red;
+                    margin: 0;
+                    font-family: "Helvetica", "Arial", sans-serif;
+                    font-size: pxToRem(36);
+                    font-weight: 700;
+                }
+
+                .project-type {
+                    //border: 1px solid red;
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: pxToRem(20);
+
+                    .tytletTag {
+                        font-family: "Helvetica", "Arial", sans-serif;
+                        font-size: pxToRem(20);
+                        font-weight: 600;
+                        margin: 0;
+                        padding: 0;
+                        margin-right: pxToRem(8);
+                    }
+
+                    .type_info {
+                        font-family: "Helvetica", "Arial", sans-serif;
+                        font-size: pxToRem(20);
+                        font-weight: 300;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                }
+
+                .project-key_skill {
+                    //border: 1px solid red;
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: pxToRem(20);
+
+                    .skillTag {
+                        font-family: "Helvetica", "Arial", sans-serif;
+                        font-size: pxToRem(20);
+                        font-weight: 600;
+                        margin: 0;
+                        padding: 0;
+                        margin-right: pxToRem(8);
+                    }
+
+                    .skill_info {
+                        font-family: "Helvetica", "Arial", sans-serif;
+                        font-size: pxToRem(20);
+                        font-weight: 300;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                }
+
+                .project-description {
+                    //border: 1px solid red;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: pxToRem(20);
+
+                    .descriptioTag {
+                        font-family: "Helvetica", "Arial", sans-serif;
+                        font-size: pxToRem(20);
+                        font-weight: 600;
+                        margin: 0;
+
+                        padding: 0;
+                    }
+
+                    .description_info {
+                        font-family: "Helvetica", "Arial", sans-serif;
+                        font-size: pxToRem(20);
+                        font-weight: 300;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                }
+
+            }
+        }
+
+        .popUpFooter {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    }
+}

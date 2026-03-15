@@ -1,0 +1,155 @@
+@charset "UTF-8";
+button[button-variant=default] {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
+  border-radius: 1.25rem;
+  background-color: #232940;
+  color: #fff;
+}
+
+button[button-variant=ResumeButton] {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1.25rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+button[button-variant=CaseDetailButton] {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1.25rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+button[button-variant=AddNew] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid #BDC5D5;
+  border-radius: 1.25rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+button[button-variant=AddNew] img,
+button[button-variant=AddNew] svg {
+  width: 1.25rem;
+  aspect-ratio: 1/1;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  button[button-variant=AddNew] {
+    font-size: 0.8125rem;
+    padding-left: 34.91%;
+    padding-right: 34.91%;
+  }
+}
+
+button[button-variant=DeletePopup] {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid #BDC5D5;
+  border-radius: 1.25rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  button[button-variant=DeletePopup] {
+    padding-left: 3.59375rem;
+    padding-right: 3.59375rem;
+  }
+}
+
+button[button-variant=DetailEdit] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid #BDC5D5;
+  border-radius: 1.25rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: 0;
+}
+button[button-variant=DetailEdit] img,
+button[button-variant=DetailEdit] svg {
+  width: 1.25rem;
+  aspect-ratio: 1/1;
+}
+
+button[button-variant=ContactIcon] {
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+button[button-variant=ContactIcon]:hover {
+  background-color: #f2f4f8;
+}
+button[button-variant=ContactIcon]:active {
+  transform: scale(0.96);
+}
+button[button-variant=ContactIcon] .button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  aspect-ratio: 1/1;
+}
+
+button[button-variant=CloseIcon] {
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+button[button-variant=CloseIcon]:hover {
+  background-color: #f2f4f8;
+}
+button[button-variant=CloseIcon]:active {
+  transform: scale(0.96);
+}
+button[button-variant=CloseIcon] .button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* 不设置 width/height，让 WarehousesList 里 img 控制大小 */
+}/*# sourceMappingURL=Button.css.map */

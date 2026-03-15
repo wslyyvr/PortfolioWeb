@@ -1,0 +1,11 @@
+@use "../..//styles/_functions" as *;
+
+.top_border{
+  width: 100%; 
+  height: pxToRem(60); 
+  background-image: url('../../assets/images/TopBorder.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  // border: 1px solid red;
+}

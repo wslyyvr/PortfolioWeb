@@ -1,0 +1,186 @@
+//@use "../../styles/_variables" as *;
+@use "../..//styles/_functions" as *;
+
+//@use "../../styles/_mixin" as *;
+button[button-variant="default"] {
+  padding-left: pxToRem(16);
+  padding-right: pxToRem(16);
+  padding-top: pxToRem(8);
+  padding-bottom: pxToRem(8);
+  border: none;
+  border-radius: pxToRem(20);
+  background-color: #232940;
+  color: #fff;
+}
+
+button[button-variant="ResumeButton"] {
+  padding-left: pxToRem(16);
+  padding-right: pxToRem(16);
+  padding-top: pxToRem(8);
+  padding-bottom: pxToRem(8);
+  border-radius: pxToRem(20);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  font-size: pxToRem(20);
+  line-height: pxToRem(22);
+  letter-spacing: 0;
+  cursor: pointer;
+
+}
+
+button[button-variant="CaseDetailButton"] {
+  padding-left: pxToRem(16);
+  padding-right: pxToRem(16);
+  padding-top: pxToRem(8);
+  padding-bottom: pxToRem(8);
+  border-radius: pxToRem(20);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  font-size: pxToRem(16);
+  line-height: pxToRem(22);
+  letter-spacing: 0;
+  cursor: pointer;
+
+}
+
+button[button-variant="AddNew"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: pxToRem(6);
+  padding-left: pxToRem(16);
+  padding-right: pxToRem(16);
+  padding-top: pxToRem(8);
+  padding-bottom: pxToRem(8);
+  border: 1px solid#BDC5D5;
+  border-radius: pxToRem(20);
+  //background-color: transparent;
+  //color: #BDC5D5;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-size: pxToRem(14);
+  line-height: pxToRem(22);
+  letter-spacing: 0;
+  white-space: nowrap;
+
+  img,
+  svg {
+    // 兼顾图片或 SVG
+    width: pxToRem(20);
+    aspect-ratio: 1 / 1;
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    font-size: pxToRem(13);
+    padding-left: 34.91%;
+    padding-right: 34.91%;
+  }
+}
+
+
+
+button[button-variant="DeletePopup"] {
+  padding-left: pxToRem(16);
+  padding-right: pxToRem(16);
+  padding-top: pxToRem(8);
+  padding-bottom: pxToRem(8);
+  border: 1px solid#BDC5D5; // 红色边框
+  border-radius: pxToRem(20);
+  //background-color: transparent;
+  //color: #BDC5D5;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-size: pxToRem(14);
+  line-height: pxToRem(22);
+  letter-spacing: 0;
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    padding-left: pxToRem(57.5);
+    padding-right: pxToRem(57.5);
+  }
+}
+
+
+
+
+
+
+button[button-variant="DetailEdit"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: pxToRem(6);
+  padding-left: pxToRem(16);
+  padding-right: pxToRem(16);
+  padding-top: pxToRem(8);
+  padding-bottom: pxToRem(8);
+  border: 1px solid#BDC5D5;
+  border-radius: pxToRem(20);
+  //background-color: transparent;
+  //color: #BDC5D5;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-size: pxToRem(14);
+  line-height: pxToRem(22);
+  letter-spacing: 0;
+
+  img,
+  svg {
+    // 兼顾图片或 SVG
+    width: pxToRem(20);
+    aspect-ratio: 1 / 1;
+  }
+}
+
+
+
+
+
+
+button[button-variant="ContactIcon"] {
+  padding: 0;
+  background: transparent; //change the background to empty
+  border: none;
+  cursor: pointer;
+
+
+  &:hover {
+    background-color: #f2f4f8;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+
+  .button-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    aspect-ratio: 1 / 1;
+  }
+}
+button[button-variant="CloseIcon"] {
+  padding: 0;
+  background: transparent; //change the background to empty
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #f2f4f8;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+
+  .button-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* 不设置 width/height，让 WarehousesList 里 img 控制大小 */
+  }
+}

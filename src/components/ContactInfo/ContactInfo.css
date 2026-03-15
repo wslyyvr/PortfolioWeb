@@ -1,0 +1,32 @@
+.contact_area {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+  width: 75%;
+  max-width: 93.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.contact_area h1 {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+.contact_area .email-area {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.contact_area .email-area p {
+  padding: 0;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.contact_area .other_social-area {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}/*# sourceMappingURL=ContactInfo.css.map */

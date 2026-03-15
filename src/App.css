@@ -1,0 +1,7 @@
+.main-part{
+  background-image: url('./assets/images/BackGroundImg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ border: 1px solid transparent;
+}

@@ -1,0 +1,124 @@
+{
+"about": [
+  "Full-Stack Engineer specializing in modern, scalable web applications",
+  "Bridges frontend and backend architecture with focus on performance and usability",
+  "Writes clean, maintainable code and follows best practices",
+  "Continuously explores new technologies to turn ideas into practical solutions",
+  "Experienced in hardware programming and embedded system development"
+],
+  "product": [
+    {
+      "name": "Instock",
+      "type": "Full-Stack App",
+      "keySkills": [
+        "React",
+        "Node.js",
+        "MySQL"
+      ],
+      "description": "Instock is a full-stack inventory management system designed to help companies track warehouse inventory, manage stock levels, and monitor product movement across multiple locations. The frontend is built with React to provide a responsive and user-friendly interface, while the backend uses Node.js and Express to manage API requests and database interactions. The system enables users to efficiently manage product data, update inventory levels, and view warehouse information through a centralized dashboard.",
+      "img": [
+        "/images/Instock/Instock_1.png",
+        "/images/Instock/Instock_2.png",
+        "/images/Instock/Instock_3.png",
+        "/images/Instock/Instock_4.png",
+        "/images/Instock/Instock_5.png"
+      ],
+      "keyPoints": [
+        "Full-stack inventory management system",
+        "REST API for warehouse and inventory data",
+        "Responsive dashboard for stock tracking"
+      ]
+    },
+    {
+      "name": "Eventure",
+      "type": "Full-Stack App",
+      "keySkills": [
+        "React",
+        "Node.js",
+        "REST API"
+      ],
+      "description": "Eventure is a full-stack event registration platform that allows users to browse, register, and manage activities online. Built with React on the frontend and Node.js for backend API handling, users can view details of upcoming or past events, modify registration information, and update event status in real time. The system provides a responsive interface to efficiently handle event discovery, registration, and management for both organizers and participants.",
+      "img": [
+        "/images/Eventure/Eventure-1.png",
+        "/images/Eventure/Eventure-2.png",
+        "/images/Eventure/Eventure-3.png",
+        "/images/Eventure/Eventure-4.png",
+        "/images/Eventure/Eventure-5.png"
+      ],
+      "keyPoints": [
+        "Full-stack event registration and management platform",
+        "REST APIs for querying, registering, and updating event data",
+        "Responsive UI for browsing, modifying, and managing events"
+      ]
+    },
+    {
+      "name": "Cartogra",
+      "type": "Web App",
+      "keySkills": [
+        "HTML",
+        "CSS",
+        "Responsive Design",
+        "UI/UX Design"
+      ],
+      "description": "Cartogra is a visually-rich front-end web application designed for travel agencies to showcase vacation packages and allow users to explore and sign up for trips online. Built entirely with HTML and CSS, the platform emphasizes a responsive layout, modern UI design, and seamless user experience. Users can navigate through featured destinations, view trip details, and interact with the interface effortlessly across devices.",
+      "img": [
+        "/images/Cartogra/Cartogra-1.png",
+        "/images/Cartogra/Cartogra-2.png",
+        "/images/Cartogra/Cartogra-3.png",
+        "/images/Cartogra/Cartogra-4.png",
+        "/images/Cartogra/Cartogra-5.png"
+      ],
+      "keyPoints": [
+        "Front-end web application for travel package exploration and signup",
+        "Responsive HTML/CSS design for seamless experience across devices",
+        "Modern UI/UX design showcasing interactive destination previews"
+      ]
+    },
+    {
+      "name": "AmbulanceAI",
+      "type": "AI-Powered APP",
+      "keySkills": [
+        "Python",
+        "Machine Learning",
+        "Data Analysis",
+        "REST API",
+        "React",
+        "MySQL"
+      ],
+      "description": "AmbulanceAI is an AI-driven ambulance dispatch system designed to help 911 operators make the most effective decision on hospital routing. By analyzing historical hospital performance data, patient conditions, and real-time availability, the system recommends the optimal hospital for each patient, ensuring the fastest and most effective medical care. The platform provides a responsive dashboard for operators, visualizing recommended routes and predicted treatment efficiency based on data-driven insights.",
+      "img": [
+        "/images/AmbulanceAI/AmbulanceAI-1.png",
+       "/images/AmbulanceAI/AmbulanceAI-2.png",
+      "/images/AmbulanceAI/AmbulanceAI-3.png",
+        "/images/AmbulanceAI/AmbulanceAI-4.png",
+        "/images/AmbulanceAI/AmbulanceAI-5.png"
+      ],
+      "keyPoints": [
+        "AI-driven ambulance routing based on historical hospital and patient data",
+        "Predictive analytics to recommend optimal hospital for fastest care",
+        "Responsive dashboard for 911 operators to visualize routing suggestions"
+      ]
+    },
+    {
+      "name": "ChatBIM",
+      "type": "AI-Powered APP",
+      "keySkills": [
+        "React",
+        "Node.js",
+        "Python",
+        "AI / NLP",
+        "BIM Data Analysis"
+      ],
+      "description": "ChatBIM is an AI-driven BIM assistant designed to help architects, engineers, and BIM specialists interact with their building models more efficiently. The platform allows users to query drawings, access BIM family libraries, retrieve technical documentation, and validate model integrity in real time. Built with a React frontend and Node.js backend, ChatBIM integrates AI and NLP technologies to provide intelligent responses, automated model checks, and contextual suggestions directly within the BIM workflow.",
+      "img": [
+        "/images/ChatBIM/ChatBIM-1.png",
+        "/images/ChatBIM/ChatBIM-2.png"
+      ],
+      "keyPoints": [
+        "AI-driven BIM assistant for querying drawings, family libraries, and documentation",
+        "Real-time model validation and clash detection suggestions",
+        "Integrates NLP and data analysis to enhance BIM workflow efficiency"
+      ]
+    }
+  ]
+}

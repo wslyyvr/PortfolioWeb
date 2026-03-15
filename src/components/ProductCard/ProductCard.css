@@ -1,0 +1,55 @@
+.display-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: clamp(40px, 6vw, 120px);
+  margin-top: 20px;
+}
+.display-card .display-card_left {
+  width: 39%;
+  aspect-ratio: 150/100;
+}
+.display-card .display-card_left .case-img {
+  width: 100%;
+  height: 100%;
+}
+.display-card .display-card_right {
+  max-width: 50%;
+  margin-bottom: 2rem;
+}
+.display-card .display-card_right h2 {
+  padding-left: 1.625rem;
+  padding-right: 1.625rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-right: auto;
+  margin-left: 0;
+  margin-top: 1.875rem;
+  border-radius: 1.25rem;
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: inline-block;
+}
+.display-card .display-card_right ul {
+  padding-left: 1.625rem;
+}
+.display-card .display-card_right ul .product-key_point {
+  padding: 0;
+  margin-bottom: 1.25rem;
+  font-family: "Inter", sans-serif;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.display-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.display-card:hover {
+  border: 2px solid rgb(17, 165, 206);
+  border-radius: 8px;
+}/*# sourceMappingURL=ProductCard.css.map */
