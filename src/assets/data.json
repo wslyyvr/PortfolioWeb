@@ -1,11 +1,18 @@
 {
-"about": [
-  "Full-Stack Engineer specializing in modern, scalable web applications",
-  "Bridges frontend and backend architecture with focus on performance and usability",
-  "Writes clean, maintainable code and follows best practices",
-  "Continuously explores new technologies to turn ideas into practical solutions",
-  "Experienced in hardware programming and embedded system development"
-],
+  "about": [
+    "Full-Stack Engineer specializing in modern, scalable web applications",
+    "Bridges frontend and backend architecture with focus on performance and usability",
+    "Writes clean, maintainable code and follows best practices",
+    "Continuously explores new technologies to turn ideas into practical solutions",
+    "Experienced in hardware programming and embedded system development"
+  ],
+  "about_mobile": [
+    "Full-Stack Web Development",
+    "Frontend & Backend Architecture",
+    "Performance & UX Optimization",
+    "Clean Code & Best Practices",
+    "Hardware & Embedded Systems Experience"
+  ],
   "product": [
     {
       "name": "Instock",
@@ -88,8 +95,8 @@
       "description": "AmbulanceAI is an AI-driven ambulance dispatch system designed to help 911 operators make the most effective decision on hospital routing. By analyzing historical hospital performance data, patient conditions, and real-time availability, the system recommends the optimal hospital for each patient, ensuring the fastest and most effective medical care. The platform provides a responsive dashboard for operators, visualizing recommended routes and predicted treatment efficiency based on data-driven insights.",
       "img": [
         "/images/AmbulanceAI/AmbulanceAI-1.png",
-       "/images/AmbulanceAI/AmbulanceAI-2.png",
-      "/images/AmbulanceAI/AmbulanceAI-3.png",
+        "/images/AmbulanceAI/AmbulanceAI-2.png",
+        "/images/AmbulanceAI/AmbulanceAI-3.png",
         "/images/AmbulanceAI/AmbulanceAI-4.png",
         "/images/AmbulanceAI/AmbulanceAI-5.png"
       ],

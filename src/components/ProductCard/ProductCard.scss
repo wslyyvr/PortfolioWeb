@@ -1,4 +1,5 @@
-@use "../..//styles/_functions" as *;
+@use "../../styles/_functions" as *;
+@use "../../styles/_global" as *;
 
 .display-card {
     width: 100%;
@@ -8,12 +9,13 @@
     //justify-content: space-between;
     gap: clamp(40px, 6vw, 120px); // 自动间距
     //border: 1px solid red ;
-    margin-top: 20px;
-
+    margin-top: pxToRem(60);
 
     .display-card_left {
         width: 39%;
-        aspect-ratio: 150/ 100;
+        height: auto;
+        //aspect-ratio: 150/ 100;
+        display: block;
 
         //border: 1px solid red ;
         .case-img {
@@ -27,6 +29,9 @@
         //border: 1px solid red;
         max-width: 50%;
         margin-bottom: pxToRem(32);
+        //border: 1px solid red;
+        display: flex;
+        flex-direction: column;
 
         h2 {
             padding-left: pxToRem(26);
@@ -75,3 +80,40 @@
     border: 2px solid rgb(17, 165, 206);
     border-radius: 8px;
 }
+
+
+
+@include mobile {
+    .display-card {
+        flex-direction: column;
+
+        .display-card_left {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .display-card_right {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between; 
+            max-width: 100%;
+            //border: 1px solid green;
+            h2{
+                  margin: pxToRem(0);
+            }
+            ul {
+                display: none;
+            }
+        }
+    }
+        .display-card.reverse {
+        flex-direction: column;
+    }
+    
+.display-card:hover {
+    border: 2px solid rgb(17, 165, 206);
+    border-radius: 8px;
+}
+}
+

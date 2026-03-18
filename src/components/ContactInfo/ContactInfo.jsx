@@ -14,10 +14,10 @@ function ContactInfo({ }) {
                 <div className='email-area'>
                     <Button
                         icon= {EmailIcon}
-                        onClick={() => { }}
+                        onClick={() => window.open("https://mail.google.com/mail", "_blank")}
                         variant="ContactIcon"
                     />
-                    <p> : wslycxm@yahoo.ca</p>
+                    <p> wslycxm@yahoo.ca</p>
                 </div>
                 <div className='other_social-area'>
                     <Button

@@ -8,7 +8,7 @@ function CaseDetailPopup({ showcase, onCancel }) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // 处理图片数组
+  // get img from data page 
   const images = showcase
     ? (Array.isArray(showcase.img) ? showcase.img : [showcase.img])
     : [];
@@ -31,7 +31,7 @@ function CaseDetailPopup({ showcase, onCancel }) {
 
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(timer);
   }, [images.length, showcase]);
@@ -93,8 +93,8 @@ function CaseDetailPopup({ showcase, onCancel }) {
           <Button
             text="Cancel"
             variant="DeletePopup"
-            initialColor="#0e1fdc"
-            initialBackgroundColor="#BDC5D5"
+             initialBackgroundColor="#3967dd"
+            initialColor="#ffffff"
             onClick={onCancel}
 
           />

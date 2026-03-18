@@ -1,4 +1,5 @@
-@use "../..//styles/_functions" as *;
+@use "../../styles/_functions" as *;
+@use "../../styles/_global" as *;
 
 .popupPart {
     position: fixed;
@@ -9,7 +10,9 @@
     //border: 1px solid red;
     background: rgba(0, 0, 0, 0.45);
     inset: 0;
-    z-index: 3;
+      z-index: 3;
+
+    overflow-y: auto;  
 
     .popupBox {
         background-color: white;
@@ -19,9 +22,11 @@
         width: 75%;
         //   aspect-ratio: 150/ 100;
         min-height: pxToRem(500);
+        max-height: pxToRem(1000);
         display: flex;
         flex-direction: column;
         gap: pxToRem(20);
+        overflow-y: auto;
 
         .popUpHeader {
             //border: 1px solid red;
@@ -50,7 +55,7 @@
                 position: relative;
                 overflow: hidden;
                 width: 50%;
-                aspect-ratio: 150/ 100;
+                //aspect-ratio: 150/ 100;
                 margin-left: 3%;
                 //border: 1px solid red;
 
@@ -71,7 +76,7 @@
 
                 .carousel-controls {
                     position: absolute;
-                    top: 50%;
+                    top: 30%;
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
@@ -223,6 +228,30 @@
             flex-direction: row;
             justify-content: center;
             margin-bottom: 30px;
+        }
+    }
+}
+@include mobile {
+    .popupPart {
+        .popupBox {
+            .popupInfo {
+                flex-direction: column;
+
+                .img-part {
+
+                    width: 95%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    //border:1px solid red;
+                }
+
+                .detail-part {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 95%;
+                    //border:1px solid red;
+                }
+            }
         }
     }
 }

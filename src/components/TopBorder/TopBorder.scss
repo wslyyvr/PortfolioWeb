@@ -1,11 +1,21 @@
 @use "../..//styles/_functions" as *;
+@use "../../styles/_global" as *;
 
-.top_border{
-  width: 100%; 
-  height: pxToRem(60); 
+.top_border {
+  width: 100%;
+  height: pxToRem(60);
   background-image: url('../../assets/images/TopBorder.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
   // border: 1px solid red;
+}
+
+
+@include mobile {
+  .top_border {
+    height: pxToRem(30);
+  }
+
+
 }
