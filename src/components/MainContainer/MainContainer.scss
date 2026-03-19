@@ -29,7 +29,7 @@
     .main-part_bar {
         width: 100%;
         height: pxToRem(12);
-        // //background-image: url('../../assets/images/MainPartBar.jpg');
+        background-image: url('../../assets/images/MainPartBar.jpg');
         // background-size: 100% 100%;
         // background-repeat: no-repeat;
         // background-position: center center;
@@ -56,7 +56,7 @@
             //margin-bottom: pxToRem(16); 
 
             button {
-                padding: pxToRem(16) pxToRem(26);
+                padding: pxToRem(6) pxToRem(9);
                 border: 1px solid #ddd;
                 background: white;
                 cursor: pointer;
@@ -138,7 +138,9 @@
     .product-area {
         gap: pxToRem(0);
         //border: 1px solid red;
-
+        .main-part_bar {
+            margin-top:  pxToRem(15);
+        }
         h1 {
 
             font-size: pxToRem(36);
@@ -150,22 +152,29 @@
 
             .custom-dropdown {
                 position: relative;
-                width: 70%;
+                width: 50%;
+                //border: ;
+                // padding: 0;
                 margin-right: auto;
                 //max-width: pxToRem(375);
                 border: 2px solid black;
             }
 
-            /* 按钮样式 */
+           
             .dropdown-btn {
-
+                position: relative;
                 width: 100%;
-                padding: pxToRem(16) pxToRem(26);
-                border: 1px solid #ddd;
+                 padding: 0;
+                // padding: pxToRem(16) pxToRem(26);
+                //border: 1px solid #ddd;
                 border-radius: pxToRem(6);
                 background: white;
-
-                font-size: pxToRem(26);
+                 //border: 1px solid red;
+                span{
+                    font-size: pxToRem(16);
+                    //border: 1px solid red;
+                }   
+                // font-size: pxToRem(16);
                 font-weight: 600;
                 font-family: "Helvetica", "Arial", sans-serif;
 
@@ -178,7 +187,8 @@
 
             .arrow {
                 margin-left: pxToRem(6);
-                font-size: pxToRem(26);
+                font-size: pxToRem(16);
+                // border: 1px solid red;
             }
 
             .dropdown-btn:hover {
@@ -186,7 +196,7 @@
                 color: white;
             }
 
-            /* 下拉菜单 */
+          
             .dropdown-menu {
                 //border: 1px solid red;
                 position: absolute;
@@ -202,11 +212,11 @@
                 z-index: 1000;
             }
 
-            /* 选项 */
+            /* option */
             .dropdown-item {
-                padding: pxToRem(14) pxToRem(20);
+                padding: pxToRem(6) pxToRem(9);
                 cursor: pointer;
-                font-size: pxToRem(24);
+                font-size: pxToRem(16);
                 transition: all 0.2s ease;
             }
 
@@ -218,6 +228,7 @@
             .dropdown-item.active {
                 background: #3967dd;
                 color: white;
+                font-size: pxToRem(16);
             }
         }
     }

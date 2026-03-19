@@ -13,6 +13,13 @@
     "Clean Code & Best Practices",
     "Hardware & Embedded Systems Experience"
   ],
+"skills": [
+  ["React", "JavaScript", "HTML", "SCSS"],
+  ["Node.js", "Express"],
+  ["MySQL", "SSMS", "SSRS", "SSAS", "T-SQL"],
+  ["Python", "C/C++", "ARM"]
+],
+
   "product": [
     {
       "name": "Instock",

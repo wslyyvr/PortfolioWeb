@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     gap: 3.3%;
-    //border: 1px solid red;
+    //border: 1px solid yellow;
 
     //align-items: center;
     .head-img {
@@ -22,9 +22,13 @@
     }
 
     .summary_resume {
-        max-width: 65%;
+        width: 88%;
+        //max-width: 65%;
         margin-top: pxToRem(120);
-        //border: 1px solid red;
+        //margin-left: pxToRem(3);
+        margin-left: auto;
+        margin-right: auto;
+        //border: 1px solid blue;
         display: flex;
         flex-direction: column;
         gap: 2.6%;
@@ -59,6 +63,52 @@
 
 
     }
+
+    .skill_block {
+        //border: 1px solid red;
+        width: 88%;
+        //height: pxToRem(200);
+        margin-right: auto;
+        margin-left: auto;
+        //margin-left: pxToRem(60);
+        display: flex;
+        flex-direction: row;
+        gap: 8%;
+        margin-top: pxToRem(60);
+        h1 {
+            padding: 0;
+            margin: 0;
+            margin-top: pxToRem(50);
+            //border: 1px solid red;
+            font-family: "Arial", "Helvetica", sans-serif;
+            color: black;
+            font-size: pxToRem(36);
+            font-weight: 700;
+        }
+
+        .skill_display {
+            display: flex;
+            flex-direction: column;
+            gap: pxToRem(12);
+            //border: 1px solid red;
+        }
+
+        .skill_row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: pxToRem(16);
+        }
+
+        .skill_tag {
+            font-family: "Arial", "Helvetica", sans-serif;
+            font-size: pxToRem(26);
+            font-weight: 500;
+            padding: 5px;
+            border: 1px solid blue;
+            border-radius: pxToRem(50);
+        }
+
+    }
 }
 
 @include tablet {
@@ -66,11 +116,11 @@
         flex-direction: column;
 
         .head-img {
-             width: pxToRem(300);
+            width: pxToRem(300);
             height: pxToRem(300);
             margin-left: auto;
             margin-right: auto;
-             margin-top: pxToRem(15);
+            margin-top: pxToRem(15);
         }
 
         .summary_resume {
@@ -78,7 +128,7 @@
             margin-right: auto;
             //border: 1px solid red;
             max-width: 89%;
-             margin-top: pxToRem(15);
+            margin-top: pxToRem(15);
         }
     }
 }
@@ -87,7 +137,17 @@
     .PersonalInfoDisplay {
         flex-direction: column;
         //border: 1px solid red;
-
+        .skill_block {
+            margin-top:  pxToRem(30);
+            //border: 1px solid red;
+            flex-direction: column;
+            gap:  pxToRem(30);
+            h1{
+                margin: 0;
+                font-size: pxToRem(36);
+            }
+    
+        }
         .head-img {
             //border: 1px solid red;
             border-radius: pxToRem(500);

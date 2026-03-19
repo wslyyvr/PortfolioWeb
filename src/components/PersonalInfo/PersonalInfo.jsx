@@ -35,6 +35,21 @@ function PersonalInfo() {
                 </ul>
 
             </div>
+            <div className='skill_block'>
+                <h1>My Skills </h1>
+
+                <div className='skill_display'>
+                    {data.skills.map((row, index) => (
+                        <div key={index} className="skill_row">
+                            {row.map((skill, i) => (
+                                <span key={i} className="skill_tag">
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
     );
 }
