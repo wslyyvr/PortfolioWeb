@@ -1,5 +1,6 @@
 .main-part{
-  background-image: url('/images/BackGroundImg.jpg');
+  /* background-image: url('./assets/images/BackGroundImg.jpg'); */
+  /* background-image: url('/images/BackGroundImg.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
